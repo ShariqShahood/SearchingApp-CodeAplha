@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mobile Shop</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <nav id="navb" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <h6 contenteditable="true"><a class="navbar-brand" id="names">The Mobile Shop</a></h6>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex ms-auto gap-3" role="search">
+          <select onchange="setModel()" id="brand" class="form-select" aria-label="Default select example">
+
+          </select>
+          <select id="model" class="form-select" aria-label="Default select example">
+
+          </select>
+          <button onclick="searchCar()" class="btn btn-outline-info" type="submit">Search</button>
+          <button onclick="clearSreach()" class="btn btn-outline-danger" type="submit">Clear</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <marquee direction="right" Bgcolor="grey" height="40px">Sale Starting from 20 Feb till 23
+    March&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThanks For Visiting Us..&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Free Delivery</marquee>
+  <br><br>
+
+  <!-- ********************************************************* -->
+  <div class="infoo container overflow-hidden text-center">
+    <div class="intro row d-flex">
+      <div class="col">
+        <div class="info p-3">
+          <p id="p1" data-text=" Welcome To Our Store"> Welcome To Our Store</p>
+          <p id="p2" data-text="Buy Anything.">Buy Anything.</p>
+          <p id="p2" data-text="We Provide Best Services">We Provide Best Services</p>
+          <p class="para"
+            data-text="The Mobile Shop is Pakistan's most trusted and convenient online store for buying original mobile phones and electronics. Our customers have always been satisfied with our delivery time and service, and we make online shopping reliable and hassle free!">
+            The Mobile Shop is Pakistan's most trusted and convenient online store for buying original mobile phones and
+            electronics. Our customers have always been satisfied with our delivery time and service, and we make online
+            shopping reliable and hassle free!</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-3">
+
+          <!-- *******************under-water*************** -->
+          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+            type="module"></script>
+          <dotlottie-player src="https://lottie.host/41bbeb47-b0e9-4670-8d75-2d85e42e98e1/N5KbHz9rpM.json"
+            background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></dotlottie-player>
+
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <!-- ********************************************************* -->
+  <center>
+    <h2 contenteditable="true"><a class="navbar-brand" id="names">Our Products</a></h2>
+  </center><br><br>
+  <div class="row p-5" id="main">
+
+  </div>
+
+  <div style="display: none;" class="row p-5" id="phone-detail">
+
+  </div>
+  <script src="app.js"></script>
+  <div class="footer">
+    <p>&copy; 2024 The Mobile Shop. All rights reserved.<br>Developed by <b><i>Shariq Shahood</i></b></p>
+  </div>
+</body>
+
+</html>

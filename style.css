@@ -1,0 +1,280 @@
+body {
+  background-color: rgb(228, 244, 245) !important;
+}
+
+#navb {
+  background-color: black !important;
+  height: 90px;
+}
+
+.card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card:hover {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  background-color: rgb(201, 228, 230);
+}
+
+marquee {
+  color: #0ef;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+h2 {
+  position: relative;
+  font-size: 100%;
+  letter-spacing: 5px;
+  color: #11afdb !important;
+  text-transform: uppercase;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  outline: none;
+  /* animation: blink 1.7s ease-in infinite alternate; */
+}
+
+.card-body {
+  font-family: "Segoe Script";
+
+}
+
+#names {
+  display: contents;
+  font-family: "Segoe Script";
+  font-weight: bolder;
+  color: #0ef;
+}
+
+h6 {
+  position: relative;
+  font-size: 100%;
+  letter-spacing: 5px;
+  color: #11afdb !important;
+  text-transform: uppercase;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  outline: none;
+  animation: blink 1.7s ease-in infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#brand,
+#model {
+  font-family: "Segoe Script";
+  background-color: black;
+  color: #0ef;
+  width: 100%;
+  border-radius: 10PX;
+  border: 5px double #0eef;
+}
+
+#brand:hover {
+  color: black;
+  background-color: rgb(168, 164, 164);
+}
+
+.btn {
+  font-family: "Segoe Script" !important;
+}
+
+.logo {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.black {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.grey {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: grey;
+  border: 1px solid black;
+
+}
+
+.white {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.silver {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: silver;
+  border: 1px solid black;
+}
+
+.gold {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: gold;
+  border: 1px solid black;
+}
+
+.red {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.maroon {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(122, 8, 8);
+  border: 1px solid black;
+}
+
+#coloring {
+  gap: 10px;
+  display: flex !important;
+}
+
+
+
+/* ***************************below header */
+.info {
+  text-align: left;
+}
+
+#p1 {
+  font-family: "Segoe Script";
+  position: relative;
+  font-size: 30px !important;
+  color: #252839;
+  -webkit-text-stroke: 0.2vw #383d53;
+  /* text-transform: uppercase; */
+}
+
+#p1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #0ef;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 5px solid #0ef;
+  overflow: hidden;
+  animation: animate 9s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+#p2 {
+  font-family: "Segoe Script";
+  position: relative;
+  font-size: 45px !important;
+  color: #252839;
+  -webkit-text-stroke: 0.2vw #383d53;
+  /* text-transform: /uppercase; */
+}
+
+#p2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #0ef;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #0ef;
+  overflow: hidden;
+  animation: animate 9s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+.para {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  font-size: 15px;
+  color: #252839;
+  -webkit-text-stroke: 0.2vw #383d53;
+  /* text-transform: /uppercase; */
+}
+
+.para::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #0ef;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #0ef;
+  overflow: hidden;
+  animation: animate 9s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+.footer {
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: white;
+}
